@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import xml2js from 'xml2js';
 import Post from './../componenets/Post'
 
 export default class Blog extends React.Component {
