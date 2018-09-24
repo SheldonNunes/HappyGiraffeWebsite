@@ -24,11 +24,9 @@ export default class Blog extends React.Component {
     render() {
       return (
         <div className="blog">
-          <div className="game-board">
             { this.state.posts.map((post) => 
               <Post key={post.title} content={post} />)
             }
-          </div>
         </div>
       );
     }

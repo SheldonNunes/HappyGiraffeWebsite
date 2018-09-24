@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import logo from './images/giraffe-logo.png';
+
+import Blog from './pages/Blog';
+import Home from './pages/Home';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from 'react-router-dom';
 import './App.css';
-import Blog from './pages/Blog'
+
+
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div>
-          <h1 className='about__title'>Happy Giraffe</h1>
+        <HashRouter>
           <div>
-              <img src={logo} className='logo-center' alt="Happy Giraffe Logo" />
+            <nav>
+                <ul>
+                  <li><NavLink to="/">Home</NavLink></li>
+                  <li><NavLink to="/blog">Blog</NavLink></li>
+                </ul>
+            </nav>
+            <div className="content">
+              <Route exact path="/" component={Home}/>
+              <Route path="/blog" component={Blog}/>
+            </div>
           </div>
-          <div className='about__description'>
-              <h2>Welcome to Happy Giraffe</h2>
-              <p>I am a software developer with keen interest on all things tech</p>
-          </div>
-          <Blog/>
-        </div>
+        </HashRouter>
       </div>
     );
   }
