@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './images/giraffe-logo.png';
 import './App.css';
-
+import Blog from './pages/Blog'
 class App extends Component {
   render() {
     return (
@@ -15,6 +15,7 @@ class App extends Component {
               <h2>Welcome to Happy Giraffe</h2>
               <p>I am a software developer with keen interest on all things tech</p>
           </div>
+          <Blog/>
         </div>
       </div>
     );
