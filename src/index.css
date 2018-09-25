@@ -29,7 +29,6 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  /* border-bottom: px #ffe771 dashed; */
   height: 163px;
   width: 100%;
   background-color: white;
@@ -37,7 +36,6 @@ body {
 }
 
 .post__thumbnail {
-  /* background-color: #ffe771; */
   width: 152px;
 
 }
@@ -45,7 +43,6 @@ body {
 .post__details {
   width: 85%;
   padding: 0px 30px 0px 30px;
-  /* background-color: #ffe771; */
 }
 
 .post__title h3 {
@@ -61,5 +58,30 @@ body {
 .post__date {
   font-family: monospace;
   color: #564f4f;
+}
+
+@media screen and (max-width: 941px) {
+  .blog {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .post {
+    display: block;
+    height: 100%;
+  }
+
+  .post__thumbnail {
+    height: 150px;
+    margin: auto;
+  }
+
+  .post__details {
+    width: 80%;
+    margin: auto;
+  }
+
+  body {
+    background-color: blue;
+  }
 }
 
