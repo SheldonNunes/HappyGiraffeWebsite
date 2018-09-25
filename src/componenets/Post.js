@@ -7,16 +7,17 @@ export default function Post(props) {
       let description = content.description.substring(firstPTag+3, firstClosingPTag);
 
       var thumbnailStyle = {
-        width: '25%',
+        width: '18%',
         height: '100%',
         backgroundImage: `url(${content.thumbnail})`,
         backgroundSize: 'cover',
+        backgroundPosition: 'center',
         overflow: 'hidden',
       };
 
       return (
         <div className="post">
-          <div style={thumbnailStyle}/>
+          <div className="post__thumbnail" style={thumbnailStyle}/>
           <div className="post__details">
             <h3 className="post__title"><a href={content.link}>{content.title}</a></h3>
             <p className="post__date">{content.pubDate}</p>

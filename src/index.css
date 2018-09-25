@@ -5,7 +5,6 @@ body {
 }
 
 .App {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,13 +32,12 @@ body {
   text-align: left;
 
   margin-bottom: 25px;
-  height: 200px;
+  height: 220px;
   width: 100%;
 }
 
 .post__thumbnail {
-  max-width: 25%;
-  margin: 20px;
+  background-color: #ffe771;
 }
 
 .post__thumbnail img {
