@@ -16,13 +16,15 @@ class App extends Component {
       <div className='App'>
         <HashRouter>
           <div>
-            <nav>
-                <ul className="navlist">
-                  <li><NavLink to="/">Home</NavLink></li>
-                  <li><NavLink to="/blog">Blog</NavLink></li>
-                </ul>
-            </nav>
-            <h1 className='about__title'>Happy Giraffe</h1>
+            <div>
+              <nav>
+                  <ul className="navlist">
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/blog">Blog</NavLink></li>
+                  </ul>
+              </nav>
+              <h1 className='about__title'>Happy Giraffe</h1>
+            </div>
             <div className="content">
               <Route exact path="/" component={Home}/>
               <Route path="/blog" component={Blog}/>

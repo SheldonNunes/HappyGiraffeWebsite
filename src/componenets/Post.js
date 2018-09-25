@@ -7,11 +7,10 @@ export default function Post(props) {
       let description = content.description.substring(firstPTag+3, firstClosingPTag);
 
       var thumbnailStyle = {
-        width: '18%',
         height: '100%',
         backgroundImage: `url(${content.thumbnail})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: '50% 50%',
         overflow: 'hidden',
       };
 
