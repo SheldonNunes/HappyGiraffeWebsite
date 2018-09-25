@@ -22,3 +22,48 @@ body {
 .navlist li {
   margin: 0px 30px 0px 0px;
 }
+
+.blog {
+  padding: 0px 80px 0px 80px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  margin-bottom: 25px;
+  height: 200px;
+  width: 100%;
+}
+
+.post__thumbnail {
+  max-width: 25%;
+  margin: 20px;
+}
+
+.post__thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.post__details {
+  width: 75%;
+  padding: 0px 30px 0px 30px;
+  background-color: #ffe771;
+}
+
+.post__title h3 {
+  margin-bottom: auto;
+}
+
+.post__title a {
+  color:black;
+  border-bottom: 1px dotted black;
+  text-decoration: none;
+}
+
+.post__date {
+  font-family: monospace;
+  color: #564f4f;
+}

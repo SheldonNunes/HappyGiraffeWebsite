@@ -4,7 +4,6 @@ import logo from './../images/giraffe-logo.png';
 export default function Home(props) {
       return (
         <div className="home">
-            <h1 className='about__title'>Happy Giraffe</h1>
             <div>
                 <img src={logo} className='logo-center' alt="Happy Giraffe Logo" />
             </div>

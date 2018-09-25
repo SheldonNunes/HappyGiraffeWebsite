@@ -22,6 +22,7 @@ class App extends Component {
                   <li><NavLink to="/blog">Blog</NavLink></li>
                 </ul>
             </nav>
+            <h1 className='about__title'>Happy Giraffe</h1>
             <div className="content">
               <Route exact path="/" component={Home}/>
               <Route path="/blog" component={Blog}/>
