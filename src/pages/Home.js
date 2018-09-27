@@ -3,7 +3,7 @@ import logo from './../images/giraffe-logo.png';
 import ReactGA from 'react-ga';
 
 export default function Home(props) {
-      ReactGA.pageview('/');
+      ReactGA.pageview('/t');
       return (
         <div className="home">
             <div>
