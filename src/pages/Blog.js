@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Post from './../componenets/Post'
+import ReactGA from 'react-ga';
 
 export default class Blog extends React.Component {
     state = {
