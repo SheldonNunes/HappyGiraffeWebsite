@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Blog from './pages/Blog';
 import Home from './pages/Home';
+import ReactGA from 'react-ga';
 import {
   Route,
   NavLink,
@@ -11,6 +12,11 @@ import './App.css';
 
 
 class App extends Component {
+  constructor(props, context) {
+    super(props, context);
+
+    ReactGA.initialize('UA-126567500-1');
+  }
   render() {
     return (
       <div className='App'>

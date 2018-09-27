@@ -21,6 +21,7 @@ export default class Blog extends React.Component {
     }
 
     render() {
+      ReactGA.pageview('/blog');
       return (
         <div className="blog">
           <h2>Blog</h2>
