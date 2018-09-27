@@ -9,7 +9,7 @@ export default function Home(props) {
             </div>
             <div className='about__description'>
                 <h2>Welcome to Happy Giraffe</h2>
-                <p>I am a software developer with keen interest on all things tech</p>
+                <p>I am a software developer with keen interest in all things tech</p>
             </div>
         </div>
       );
