@@ -4,7 +4,7 @@ export default function Post(props) {
       const { content } = props;
       let firstPTag = content.description.indexOf('<p>')
       let firstClosingPTag = content.description.indexOf('</p>')
-      let description = content.description.substring(firstPTag+3, firstClosingPTag);
+      let description = content.description.substring(firstPTag+3, firstClosingPTag).replace(/<[^>]+>/g, '');
 
       var thumbnailStyle = {
         backgroundImage: `url(${content.thumbnail})`,
