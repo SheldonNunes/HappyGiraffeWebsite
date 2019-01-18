@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
 body {
     color: black;
-    background-color: #fad107;
+    background-color: #f9f9f9;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -21,9 +22,10 @@ body {
 }
 
 .about__title {
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 56px;
+    font-weight: 100;
 }
 
 .about__description {
@@ -32,7 +34,7 @@ body {
 
 .navbar {
     box-shadow: 0px 0px 20px #000000bd;
-    background-color: #fad107;
+    background-color: #f9f9f9;
 }
 
 .footer {
@@ -71,4 +73,25 @@ body {
      height: 100%;
      z-index: 9999;
      background: url('images/LoadingSpinner.svg') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.show {
+    padding: 25px;
+    width: 200px;
+}
+
+.tvImage {
+    height: 200px;
+    cursor: pointer;
+}
+
+.tvName {
+    cursor: pointer;
 }
