@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 export default function Show(props) {
-      const { content } = props;
+      const { content, onClick } = props;
 
       return (
-        <div className="show">
-            <h3 className="post__name"><a>{content.name}</a></h3>
-        </div>
-      );
+        <div className="show" >
+            <img onClick={() => onClick(content)} className="tvImage" src={'https://image.tmdb.org/t/p/w200/' + content.poster_path}/>
+            <p onClick={() => onClick(content)}>{content.name}</p>
+        </div>)
   }

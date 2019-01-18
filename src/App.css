@@ -74,3 +74,24 @@ body {
      z-index: 9999;
      background: url('images/LoadingSpinner.svg') 50% 50% no-repeat rgb(249,249,249);
 }
+
+.searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.show {
+    padding: 25px;
+    width: 200px;
+}
+
+.tvImage {
+    height: 200px;
+    cursor: pointer;
+}
+
+.tvName {
+    cursor: pointer;
+}
