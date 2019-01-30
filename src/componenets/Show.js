@@ -5,7 +5,7 @@ export default function Show(props) {
 
       return (
         <div className="show" >
-            <img onClick={() => onClick(content)} className="tvImage" src={'https://image.tmdb.org/t/p/w200/' + content.poster_path}/>
-            <p onClick={() => onClick(content)}>{content.name}</p>
+            <img onClick={() => onClick(content)} className="tvImage" src={content.Poster}/>
+            <p onClick={() => onClick(content)}>{content.Title}</p>
         </div>)
   }

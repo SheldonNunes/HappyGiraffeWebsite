@@ -40,6 +40,7 @@ export default class TvShowRater extends React.Component {
             ]
            },
            options: {
+            maintainAspectRatio: false,
             scales: {
               xAxes: [{
                 ticks: {
@@ -73,7 +74,7 @@ export default class TvShowRater extends React.Component {
         let uri = encodeURI(`https://4nik31yl2m.execute-api.us-east-2.amazonaws.com/default/search-tv?query='` + this.state.search + `'`)
         axios.get(uri)
         .then(response => {
-            return response.data.results
+            return response.data.Search
         })
         .then(searchResults => {
           that.setState({searchAttempted: true})
@@ -93,7 +94,7 @@ export default class TvShowRater extends React.Component {
       this.setState({loading: true})
       let that = this;
       this.setState({ selectedShow: show })
-      let uri = encodeURI(`https://29f5e073z2.execute-api.us-east-2.amazonaws.com/default/get-tv-episodes?id=` + show.id)
+      let uri = encodeURI(`https://29f5e073z2.execute-api.us-east-2.amazonaws.com/default/get-tv-episodes?id=` + show.imdbID)
       axios.get(uri)
         .then(response => {
             return response.data
@@ -108,17 +109,18 @@ export default class TvShowRater extends React.Component {
             let seasonColor = that.dynamicColors();
             let season = JSON.parse(seasonJSON);
             let dataset = {
-              label: "Season " + season.season_number,
+              label: "Season " + season.Season,
               data: new Array(totalEpisodesSoFar).fill(null),
               fill: false,
-              pointRadius: 7,
-              pointHoverRadius: 10,
+              lineTension: 0,
+              pointRadius: 2,
+              pointHoverRadius: 3,
               pointBackgroundColor: seasonColor,
               borderColor: seasonColor
             }
-            season.episodes.forEach(function(episode) {
-              chart.labels.push("Episode " + episode.episode_number + ": " + episode.name);
-              dataset.data.push(episode.vote_average)
+            season.Episodes.forEach(function(episode) {
+              chart.labels.push("Episode " + episode.Episode + ": " + episode.Title);
+              dataset.data.push(episode.imdbRating)
               totalEpisodesSoFar += 1;
             });
 
@@ -144,7 +146,7 @@ export default class TvShowRater extends React.Component {
             { !this.state.selectedShow ? <div className="searchResults">
               { !this.state.loading && this.state.searchResults.length === 0 && this.state.searchAttempted ? <p>No Results</p> : null }
               { this.state.searchResults.map((result) => 
-                  <Show key={result.id} content={result} onClick={this.showSelected}/>
+                  <Show key={result.imdbID} content={result} onClick={this.showSelected}/>
                 )
               }
             </div> : null }
