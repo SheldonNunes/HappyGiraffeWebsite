@@ -43,13 +43,15 @@ export default class TvShowRater extends React.Component {
             maintainAspectRatio: false,
             scales: {
               xAxes: [{
+                gridLines : {
+                  display : false
+                },
                 ticks: {
                   display: false
                 }
               }],
               yAxes: [{
                 ticks: {
-                  beginAtZero: true,
                   max: 10
                 }
               }]
@@ -112,7 +114,6 @@ export default class TvShowRater extends React.Component {
               label: "Season " + season.Season,
               data: new Array(totalEpisodesSoFar).fill(null),
               fill: false,
-              lineTension: 0,
               pointRadius: 2,
               pointHoverRadius: 3,
               pointBackgroundColor: seasonColor,
@@ -150,7 +151,7 @@ export default class TvShowRater extends React.Component {
                 )
               }
             </div> : null }
-            <div>
+            <div className="chart">
               { !this.state.loading && this.state.selectedShow ? <Line data={this.state.chart} options={this.state.options}/> : null }
             </div>
         </div>

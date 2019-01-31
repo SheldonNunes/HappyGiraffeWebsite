@@ -58,6 +58,11 @@ body {
   color: #564f4f;
 }
 
+.chart {
+  padding: 50px 10% 50px 10%;
+  height: 500px;
+}
+
 @media screen and (max-width: 941px) {
   .blog {
     padding: 0px 15px 0px 15px;
@@ -81,6 +86,11 @@ body {
 
   body {
     background-color: blue;
+  }
+
+  .chart {
+    padding: none;
+    height: 500px;
   }
 }
 
