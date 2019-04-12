@@ -80,7 +80,9 @@ export default class TvShowRater extends React.Component {
         })
         .then(searchResults => {
           that.setState({searchAttempted: true})
-          that.setState({ searchResults })
+          if(searchResults) {
+            that.setState({ searchResults })
+          }
           that.setState({loading: false})
         })
     }
