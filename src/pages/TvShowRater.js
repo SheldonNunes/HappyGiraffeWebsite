@@ -143,7 +143,7 @@ export default class TvShowRater extends React.Component {
           <p>Note this does not work for shows exceeding 45 seasons</p>
           <form onSubmit={this.handleSubmit}>
             <input type="text" value={this.state.search} name="search" onChange={this.handleChange} />
-            <input type="submit" value="Submit" disabled={this.state.search === '' || this.state.loading} />
+            <input type="submit" value="Search" disabled={this.state.search === '' || this.state.loading} />
           </form>
           { this.state.loading ? <Spinner /> : null }
             { !this.state.selectedShow ? <div className="searchResults">
