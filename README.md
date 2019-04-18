@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9a2fddc5-2ac9-4a8f-82cb-b03a22a546fd/deploy-status)](https://app.netlify.com/sites/elegant-kare-3738ad/deploys)
+[![codebeat badge](https://codebeat.co/badges/ee3ae5e4-72de-41ad-a8b2-c5caf10cc861)](https://codebeat.co/projects/github-com-sheldonnunes-happygiraffewebsite-master)
 
 # Happy Giraffe Website
 This is the Happy Giraffe Repository. All website related code is deployed here and linked with Netlify (hosting platform). This website has been created using Vue.js
