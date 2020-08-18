@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+@import url("https://fonts.googleapis.com/css?family=Lobster|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
 
 body {
-    color: black;
-    background-color: #f9f9f9;
-    font-family: 'Raleway', sans-serif;
+  color: black;
+  background-color: #f9f9f9;
+  font-family: "Raleway", sans-serif;
 }
 
 .App {
@@ -12,86 +12,140 @@ body {
 }
 
 .logo {
-    width: 80px;
+  width: 80px;
 }
 
 .logo-center {
-    width: 35%;
-    display: block;
-    margin: -15px auto;
+  width: 35%;
+  display: block;
+  margin: -15px auto;
 }
 
 .about__title {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 100;
 }
 
 .about__description {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar {
-    box-shadow: 0px 0px 20px #000000bd;
-    background-color: #f9f9f9;
+  box-shadow: 0px 0px 20px #000000bd;
+  background-color: #f9f9f9;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .footer-block {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 50px;
-    width:100%;
-    background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: black;
 }
 
 .footer-giraffe {
-    width:300px;
+  width: 300px;
 }
 
 #content {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .spinner {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
-.loader{
-    position: fixed;
-     left: 0px;
-     top: 0px;
-     width: 100%;
-     height: 100%;
-     z-index: 9999;
-     background: url('images/LoadingSpinner.svg') 50% 50% no-repeat rgb(249,249,249);
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("images/LoadingSpinner.svg") 50% 50% no-repeat
+    rgb(249, 249, 249);
 }
 
 .searchResults {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-around;
 }
 
 .show {
-    padding: 25px;
-    width: 200px;
+  padding: 25px;
+  width: 200px;
 }
 
 .tvImage {
-    height: 200px;
-    cursor: pointer;
+  height: 200px;
+  cursor: pointer;
 }
 
 .tvName {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.banner-logo-container {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.banner-logo {
+  width: 80px;
+  filter: invert(1);
+}
+
+.banner-top {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+
+.banner-top h3 {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 3px 2px black;
+  margin: 5px;
+}
+
+.banner-container .banner-footer {
+  bottom: 5px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 1.6em;
+  text-shadow: 2px 3px 2px black;
+}
+
+.banner-container p {
+  margin: 5px;
+}
+
+.arrow {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.we-are-here {
+  width: 40px;
 }
