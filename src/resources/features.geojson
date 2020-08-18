@@ -185,6 +185,24 @@
       "properties": {},
       "geometry": {
         "coordinates": [
+          [
+            -66.681964,
+            48.016763
+          ],
+          [
+            -66.100506,
+            48.098133
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "6e59b14429c796882e69f5fb3ad70b08"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
           -67.431499,
           48.464903
         ],
@@ -269,6 +287,20 @@
         "type": "Point"
       },
       "id": "d3e0e1666942fa35c9241d80a5548ad0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Carleton-Sur-Mer, Quebec, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -66.1007,
+          48.0982
+        ],
+        "type": "Point"
+      },
+      "id": "place.18112238154192840"
     }
   ],
   "type": "FeatureCollection"
