@@ -147,5 +147,24 @@ body {
 }
 
 .we-are-here {
-  width: 40px;
+  width: 60px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-sidebar {
+  background-color: #eee8d7cf;
+  float: right;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 275px;
+}
+
+.statistic-graph {
+  font-family: sans-serif;
+  padding: 0px 50px;
 }

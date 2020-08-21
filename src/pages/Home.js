@@ -2,20 +2,32 @@ import React, { Component, useRef } from "react";
 import logo from "./../images/giraffe-logo.png";
 import banner from "./../images/banner.jpg";
 import ReactGA from "react-ga";
-import here from "./../images/we-are-here.png";
+import here from "./../images/van-gif2.gif";
+import Odometer from "react-odometerjs";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import "./../Odometer.css";
 import ReactMapboxGl, {
   Layer,
   Feature,
   Marker,
   GeoJSONLayer,
+  ZoomControl,
 } from "react-mapbox-gl";
-import features from "./../resources/features.geojson";
+
+import travelled from "./../resources/travelled.geojson";
+import locations from "./../resources/locations.geojson";
 
 const Map = ReactMapboxGl({
-  interactive: false,
+  interactive: true,
+  scrollZoom: false,
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
+const distanceTravelled = 240675 - 238904;
+const currentDays = Math.round(
+  (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
+);
 
 export default function Home(props) {
   const ref = React.createRef();
@@ -42,28 +54,25 @@ export default function Home(props) {
           </p>
         </div>
       </div>
-      <div ref={ref}>
+      <div className="map-container" ref={ref}>
         <Map
-          style="mapbox://styles/mapbox/streets-v9"
+          style="mapbox://styles/sheldonnunes/cke4f32ub037k18pdnv70maw9"
           containerStyle={{
             height: "100vh",
             width: "100%",
             cursor: "default",
           }}
-          center={[-66.1007, 48.0982]}
+          center={[-64.719509, 47.729466]}
           zoom={[6]}
         >
-          <Marker coordinates={[-66.1007, 48.0982]} anchor="bottom">
+          <Marker coordinates={[-66.682, 48.014]} anchor="center">
             <img className="we-are-here" src={here} />
           </Marker>
           <GeoJSONLayer
-            data={features}
+            data={travelled}
             lineLayout={{}}
-            circlePaint={{
-              "circle-radius": 6,
-            }}
             linePaint={{
-              "line-width": 6,
+              "line-width": 2,
             }}
             symbolLayout={{
               "text-field": "{place}",
@@ -72,8 +81,40 @@ export default function Home(props) {
               "text-anchor": "top",
             }}
           />
+          <GeoJSONLayer
+            data={locations}
+            lineLayout={{}}
+            circlePaint={{
+              "circle-radius": 6,
+            }}
+            linePaint={{
+              "line-width": 2,
+            }}
+            symbolLayout={{
+              "text-field": "{place}",
+              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+              "text-offset": [0, 0.6],
+              "text-anchor": "top",
+            }}
+          />
+          <ZoomControl position="top-left" />
         </Map>
-        ;
+        <div className="map-sidebar">
+          <h2>Some Statistics</h2>
+          <h4>Odometer (kms)</h4>
+          <div className="odometer--container">
+            <Odometer theme="car" value={distanceTravelled} />
+          </div>
+          <h4>Total Nights</h4>
+          <div className="statistic-graph">
+            <CircularProgressbar
+              value={(currentDays / 60) * 100}
+              text={`${currentDays}/${60}`}
+            />
+          </div>
+          <h4>Total Tim Horton's visited</h4>
+          <p>18</p>
+        </div>
       </div>
     </div>
   );
