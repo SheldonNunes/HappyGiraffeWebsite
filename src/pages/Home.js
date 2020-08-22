@@ -1,9 +1,10 @@
-import React, { Component, useRef } from "react";
+import React, { Component, useRef, useState, useEffect } from "react";
 import logo from "./../images/giraffe-logo.png";
 import banner from "./../images/banner.jpg";
 import ReactGA from "react-ga";
 import here from "./../images/van-gif2.gif";
 import Odometer from "react-odometerjs";
+import StarRatings from "react-star-ratings";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./../Odometer.css";
@@ -13,6 +14,7 @@ import ReactMapboxGl, {
   Marker,
   GeoJSONLayer,
   ZoomControl,
+  Popup,
 } from "react-mapbox-gl";
 
 import travelled from "./../resources/travelled.geojson";
@@ -38,6 +40,25 @@ export default function Home(props) {
       block: "start",
     });
 
+  const [locationsData, setLocationsData] = useState([]);
+  const [selectedLocation, setSelectedLocation] = useState({
+    geometry: {
+      coordinates: [0, 0],
+    },
+    properties: {},
+  });
+
+  async function fetchLocations() {
+    const res = await fetch(window.location.origin + locationUrl);
+    const data = await res.json();
+    setLocationsData(data);
+  }
+
+  const locationUrl = locations;
+  useEffect(() => {
+    fetchLocations();
+  }, []);
+
   ReactGA.pageview("/t");
   return (
     <div className="home">
@@ -62,7 +83,7 @@ export default function Home(props) {
             width: "100%",
             cursor: "default",
           }}
-          center={[-64.719509, 47.729466]}
+          center={[-66.682, 48.014]}
           zoom={[6]}
         >
           <Marker coordinates={[-66.682, 48.014]} anchor="center">
@@ -96,8 +117,18 @@ export default function Home(props) {
               "text-offset": [0, 0.6],
               "text-anchor": "top",
             }}
+            circleOnClick={(circleInfo) => {
+              setSelectedLocation(circleInfo.features[0]);
+            }}
           />
           <ZoomControl position="top-left" />
+          <Popup coordinates={selectedLocation.geometry.coordinates}>
+            <img
+              className="popup-image"
+              src={selectedLocation.properties.image_url}
+            />
+            <h4>{selectedLocation.properties.place_name}</h4>
+          </Popup>
         </Map>
         <div className="map-sidebar">
           <h2>Some Statistics</h2>

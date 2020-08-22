@@ -197,7 +197,8 @@
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Carleton-Sur-Mer, Quebec, Canada"
+        "place_name": "Carleton-Sur-Mer, Quebec, Canada",
+        "image_url": "https://iili.io/dvEmWN.jpg"
       },
       "geometry": {
         "coordinates": [
