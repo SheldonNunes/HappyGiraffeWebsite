@@ -4,7 +4,6 @@ import banner from "./../images/banner.jpg";
 import ReactGA from "react-ga";
 import here from "./../images/van-gif2.gif";
 import Odometer from "react-odometerjs";
-import StarRatings from "react-star-ratings";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./../Odometer.css";
@@ -26,7 +25,7 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 24135 - 238904;
+const distanceTravelled = 241354 - 238904;
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
 );
