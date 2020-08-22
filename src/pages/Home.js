@@ -26,7 +26,7 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 240675 - 238904;
+const distanceTravelled = 24135 - 238904;
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
 );
@@ -83,10 +83,10 @@ export default function Home(props) {
             width: "100%",
             cursor: "default",
           }}
-          center={[-66.682, 48.014]}
+          center={[-61.771633, 47.413498]}
           zoom={[6]}
         >
-          <Marker coordinates={[-66.682, 48.014]} anchor="center">
+          <Marker coordinates={[-61.771633, 47.413498]} anchor="center">
             <img className="we-are-here" src={here} />
           </Marker>
           <GeoJSONLayer
