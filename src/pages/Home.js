@@ -4,6 +4,7 @@ import banner from "./../images/banner.jpg";
 import ReactGA from "react-ga";
 import here from "./../images/van-gif2.gif";
 import Odometer from "react-odometerjs";
+import Timeline from "./../componenets/Timeline";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./../Odometer.css";
@@ -20,8 +21,8 @@ import travelled from "./../resources/travelled.geojson";
 import locations from "./../resources/locations.geojson";
 
 const Map = ReactMapboxGl({
-  interactive: true,
-  scrollZoom: false,
+  interactive: false,
+  // scrollZoom: false,
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
@@ -120,14 +121,7 @@ export default function Home(props) {
               setSelectedLocation(circleInfo.features[0]);
             }}
           />
-          <ZoomControl position="top-left" />
-          <Popup coordinates={selectedLocation.geometry.coordinates}>
-            <img
-              className="popup-image"
-              src={selectedLocation.properties.image_url}
-            />
-            <h4>{selectedLocation.properties.place_name}</h4>
-          </Popup>
+          {/* <ZoomControl position="top-left" /> */}
         </Map>
         <div className="map-sidebar">
           <h2>Some Statistics</h2>
@@ -146,6 +140,8 @@ export default function Home(props) {
           <p>18</p>
         </div>
       </div>
+      <h2>Timeline</h2>
+      <Timeline />
     </div>
   );
 }
