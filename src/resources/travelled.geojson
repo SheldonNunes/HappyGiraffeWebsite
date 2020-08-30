@@ -5,6 +5,18 @@
       "properties": {},
       "geometry": {
         "coordinates": [
+          -71.232838,
+          46.826911
+        ],
+        "type": "Point"
+      },
+      "id": "0d35b22448d60331faf3c12984167c1f"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
           [
             -73.611752,
             45.492648
@@ -1212,7 +1224,163 @@
           [
             -65.26023,
             48.02537
-          ],
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "17165d7bc15770f57ef4cccee5b1b27e"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -69.170092,
+          48.122287
+        ],
+        "type": "Point"
+      },
+      "id": "24ec3b73a0cdc3afed5baf2b190933f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -68.818843,
+          48.334709
+        ],
+        "type": "Point"
+      },
+      "id": "26e14b0777b0520a862e311c286aee27"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -72.147542,
+          45.264296
+        ],
+        "type": "Point"
+      },
+      "id": "2784ae44ce64df3f8e90863eedda7cdd"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -71.889404,
+          45.40252
+        ],
+        "type": "Point"
+      },
+      "id": "2db800b8c6127af49c136ad533459174"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -68.529886,
+          48.449983
+        ],
+        "type": "Point"
+      },
+      "id": "38d25702a05469c370f285f649aeb446"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -71.802962,
+          45.133048
+        ],
+        "type": "Point"
+      },
+      "id": "404d237decf87285cc6bd1b94e1a207b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "t": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.61085,
+          45.496825
+        ],
+        "type": "Point"
+      },
+      "id": "46617afed3bfd06efdfec4b03f96daf5"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -70.460799,
+          47.036666
+        ],
+        "type": "Point"
+      },
+      "id": "508d9f63d0060865273df27c5d3274ec"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -69.536799,
+          47.835569
+        ],
+        "type": "Point"
+      },
+      "id": "5a05ee01a4b2f3422f02859a4ec7b04a"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -67.431499,
+          48.464903
+        ],
+        "type": "Point"
+      },
+      "id": "708d55d62b6351d11add7f38bbaac833"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -70.556043,
+          46.981214
+        ],
+        "type": "Point"
+      },
+      "id": "81022ac450ddf7612133b08fc8579087"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -70.035162,
+          47.368655
+        ],
+        "type": "Point"
+      },
+      "id": "b13f656876a5c00dde74280c49496cf1"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
           [
             -66.794986,
             47.994766
@@ -1504,19 +1672,115 @@
         ],
         "type": "LineString"
       },
-      "id": "17165d7bc15770f57ef4cccee5b1b27e"
+      "id": "bb6b2f0c25bac42da0d0f8f22982c081"
     },
     {
       "type": "Feature",
       "properties": {},
       "geometry": {
         "coordinates": [
-          -69.170092,
-          48.122287
+          -66.683252,
+          48.015675
         ],
         "type": "Point"
       },
-      "id": "24ec3b73a0cdc3afed5baf2b190933f4"
+      "id": "bf1a2ae1809108ff94917c93028cc6b0"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -71.972545,
+          45.275863
+        ],
+        "type": "Point"
+      },
+      "id": "c18a40bad0ea218dd397d97d8cd89094"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -71.390764,
+          46.995868
+        ],
+        "type": "Point"
+      },
+      "id": "d3e0e1666942fa35c9241d80a5548ad0"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -66.69371,
+          48.021439
+        ],
+        "type": "Point"
+      },
+      "id": "f3d4f02743c6adbeaab672770c7899fc"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            -64.677986,
+            48.347371
+          ],
+          [
+            -64.783161,
+            48.210244
+          ],
+          [
+            -64.904774,
+            48.185225
+          ],
+          [
+            -64.973839,
+            48.201239
+          ],
+          [
+            -64.981346,
+            48.136152
+          ],
+          [
+            -65.051911,
+            48.105081
+          ],
+          [
+            -65.154006,
+            48.061952
+          ],
+          [
+            -65.221569,
+            48.03184
+          ],
+          [
+            -65.256101,
+            48.02682
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "f5283977b5f30976369808e1ae2870dc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Carleton-Sur-Mer, Quebec, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -66.1007,
+          48.0982
+        ],
+        "type": "Point"
+      },
+      "id": "place.18112238154192840"
     }
   ],
   "type": "FeatureCollection"
