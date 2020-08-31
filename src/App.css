@@ -118,7 +118,7 @@ body {
 .banner-top {
   position: absolute;
   width: 100%;
-  top: 100px;
+  top: 50px;
 }
 
 .banner-top h3 {
@@ -199,6 +199,10 @@ body {
   border: 0px solid black;
 }
 
+.vertical-timeline-element {
+  margin-top: -160px;
+}
+
 .vertical-timeline-element-content {
   background-color: white !important;
   border-radius: 10px;
@@ -229,6 +233,11 @@ body {
 
 .full-width {
   width: 100%;
+}
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline-element {
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
