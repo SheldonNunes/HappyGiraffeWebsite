@@ -147,7 +147,7 @@ export default function Home(props) {
         </div>
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
-          <p>18</p>
+          <p>19</p>
         </div>
       </div>
       <div className="map-sidebar">
