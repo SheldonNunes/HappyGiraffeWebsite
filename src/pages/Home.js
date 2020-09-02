@@ -9,7 +9,6 @@ import Odometer from "react-odometerjs";
 import Timeline from "./../componenets/Timeline";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import "./../Odometer.css";
 import "./../ProgressBar.css";
 import ReactMapboxGl, {
   Layer,
@@ -68,11 +67,11 @@ export default function Home(props) {
       <div className="banner-container">
         <div className="banner-top">
           <img src={logo} className="banner-logo" alt="Happy Giraffe Logo" />
-          <h3 className="banner-text">Our Vanlife Adventure</h3>
+          <h1 className="banner-text">Our Vanlife Adventure</h1>
         </div>
         <img src={banner} className="banner" />
         <div className="banner-footer">
-          <p>See where we are now</p>
+          <h3>See where we are now</h3>
           <p onClick={handleClick} className="arrow">
             ▽
           </p>
@@ -90,14 +89,15 @@ export default function Home(props) {
             center={[-64.677986, 47.47371]}
             zoom={[6]}
           >
-            <Marker coordinates={[-64.677986, 48.347371]} anchor="center">
+            <Marker coordinates={[-64.217068, 48.522724]} anchor="center">
               <img className="we-are-here" src={here} />
             </Marker>
             <GeoJSONLayer
               data={travelled}
               lineLayout={{}}
               linePaint={{
-                "line-width": 2,
+                "line-width": 4,
+                "line-color": "#899a47",
               }}
               symbolLayout={{
                 "text-field": "{place}",
@@ -111,6 +111,7 @@ export default function Home(props) {
               lineLayout={{}}
               circlePaint={{
                 "circle-radius": 6,
+                "circle-color": "#697538",
               }}
               linePaint={{
                 "line-width": 2,
@@ -132,8 +133,8 @@ export default function Home(props) {
       <div className="map-sidebar">
         <div className="full-width">
           <h4>Odometer (kms)</h4>
-          <div className="odometer--container">
-            <Odometer theme="car" value={distanceTravelled} />
+          <div className="stat-container">
+            <p className="stat">{distanceTravelled}</p>
           </div>
         </div>
         <div className="full-width">
@@ -147,7 +148,9 @@ export default function Home(props) {
         </div>
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
-          <p>19</p>
+          <div className="stat-container">
+            <p className="stat">19</p>
+          </div>
         </div>
       </div>
       <div className="map-sidebar">

@@ -1,11 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Raleway");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
   color: black;
-  background-color: #e9e9e9;
-  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+h4 {
+  color: #565656;
+}
+
+p {
+  font-family: "Roboto";
+  letter-spacing: 1.1px;
+  line-height: 28px;
+  color: #565656;
 }
 
 .App {
@@ -121,10 +145,11 @@ body {
   top: 50px;
 }
 
-.banner-top h3 {
+.banner-top h1 {
   font-size: 3em;
   text-align: center;
   color: white;
+  font-weight: 200;
   text-shadow: 2px 3px 2px black;
   margin: 5px;
 }
@@ -145,6 +170,7 @@ body {
 .arrow {
   font-size: 1.8em;
   cursor: pointer;
+  color: white;
 }
 
 .we-are-here {
@@ -153,6 +179,7 @@ body {
 
 .map-section {
   display: flex;
+  padding-bottom: 40px;
 }
 
 .map-container {
@@ -172,16 +199,8 @@ body {
   padding-bottom: 50px;
 }
 
-.map-sidebar p {
-  color: #999;
-}
-
-.map-sidebar h4 {
-  color: #333;
-}
-
 .map-sidebar img {
-  filter: grayscale(30%);
+  filter: grayscale(60%);
   color: #333;
 }
 
@@ -196,21 +215,9 @@ body {
 
 .timeline-image {
   max-height: 500px;
-  border: 10px solid #1f1f1f;
+  border: 6px solid #2f2f2f;
   border-radius: 5px;
   max-width: 100%;
-}
-
-.vertical-timeline--two-columns:nth-child(odd)
-  .vertical-timeline-element:nth-child(odd)
-  .vertical-timeline-element-content {
-  transform: rotate(-3deg);
-}
-
-.vertical-timeline--two-columns:nth-child(odd)
-  .vertical-timeline-element:nth-child(even)
-  .vertical-timeline-element-content {
-  transform: rotate(3deg);
 }
 
 .vertical-timeline-element {
@@ -219,6 +226,7 @@ body {
 
 .vertical-timeline-element-content {
   background-color: white !important;
+  box-shadow: 3px 4px 8px #ababab;
   border-radius: 10px;
 }
 
@@ -243,6 +251,17 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.1em;
+}
+
+.stat {
+  font-size: 20px;
+  color: #889a47 !important;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 .full-width {
