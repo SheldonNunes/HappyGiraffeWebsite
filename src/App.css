@@ -288,3 +288,7 @@ p {
     flex-direction: column;
   }
 }
+
+.toberemoved {
+  display: grid;
+}
