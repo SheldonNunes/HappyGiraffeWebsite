@@ -149,7 +149,7 @@ export default function Home(props) {
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
           <div className="stat-container">
-            <p className="stat">19</p>
+            <p className="stat">20</p>
           </div>
         </div>
       </div>
@@ -157,17 +157,17 @@ export default function Home(props) {
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha One - FX-Quartz</p>
-          <p>34/36 Photos</p>
+          <p>35/36 Photos</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha Two - FX-Quartz</p>
-          <p>23/36 Photos</p>
+          <p>25/36 Photos</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={sony_a7} />
           <p>Sony A7</p>
-          <p>327 Photos</p>
+          <p>643 Photos</p>
         </div>
       </div>
       <h2>Timeline</h2>
