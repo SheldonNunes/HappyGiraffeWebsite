@@ -89,7 +89,7 @@ export default function Home(props) {
             center={[-64.677986, 47.47371]}
             zoom={[6]}
           >
-            <Marker coordinates={[-64.217068, 48.522724]} anchor="center">
+            <Marker coordinates={[-64.486091, 48.83148]} anchor="center">
               <img className="we-are-here" src={here} />
             </Marker>
             <GeoJSONLayer
