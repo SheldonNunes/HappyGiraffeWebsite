@@ -1,23 +1,15 @@
-import React, { Component, useRef, useState, useEffect } from "react";
+import React from "react";
 import logo from "./../images/giraffe-logo.png";
 import film_roll from "./../images/film-roll.png";
 import sony_a7 from "./../images/sony-a7ii.png";
 import banner from "./../images/banner.jpg";
 import ReactGA from "react-ga";
 import here from "./../images/van-gif2.gif";
-import Odometer from "react-odometerjs";
 import Timeline from "./../componenets/Timeline";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./../ProgressBar.css";
-import ReactMapboxGl, {
-  Layer,
-  Feature,
-  Marker,
-  GeoJSONLayer,
-  ZoomControl,
-  Popup,
-} from "react-mapbox-gl";
+import ReactMapboxGl, { Marker, GeoJSONLayer } from "react-mapbox-gl";
 
 import travelled from "./../resources/travelled.geojson";
 import locations from "./../resources/locations.geojson";
@@ -42,25 +34,6 @@ export default function Home(props) {
       behavior: "smooth",
       block: "start",
     });
-
-  const [locationsData, setLocationsData] = useState([]);
-  const [selectedLocation, setSelectedLocation] = useState({
-    geometry: {
-      coordinates: [0, 0],
-    },
-    properties: {},
-  });
-
-  async function fetchLocations() {
-    const res = await fetch(window.location.origin + locationUrl);
-    const data = await res.json();
-    setLocationsData(data);
-  }
-
-  const locationUrl = locations;
-  useEffect(() => {
-    fetchLocations();
-  }, []);
 
   ReactGA.pageview("/t");
   return (
@@ -124,7 +97,7 @@ export default function Home(props) {
                 "text-anchor": "top",
               }}
               circleOnClick={(circleInfo) => {
-                setSelectedLocation(circleInfo.features[0]);
+                // setSelectedLocation(circleInfo.features[0]);
               }}
             />
           </Map>
