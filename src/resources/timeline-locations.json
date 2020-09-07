@@ -1,12 +1,20 @@
 {
   "locations": [
     {
+      "id": 15,
+      "title": "Pérce",
+      "location": "Pérce",
+      "date": "1-4 Sep",
+      "description": "",
+      "image": "perce_pose.jpg"
+    },
+    {
       "id": 14,
       "title": "Island time",
       "location": "Iles de la Madeleine",
       "date": "22-29 Aug",
       "description": "",
-      "image": "https://iili.io/dibLl9.jpg"
+      "image": "magdolen_islands.jpg"
     },
     {
       "id": 13,
@@ -23,7 +31,7 @@
       "location": "Carleton-sur-Mer",
       "date": "18 Aug",
       "description": "",
-      "image": "https://iili.io/dvEmWN.jpg"
+      "image": "carleton.jpg"
     },
     {
       "id": 11,
@@ -31,7 +39,7 @@
       "location": "Amqui",
       "date": "16-17 Aug",
       "description": "",
-      "image": "https://iili.io/d8RepI.jpg"
+      "image": "amqui.jpg"
     },
     {
       "id": 10,
@@ -39,7 +47,8 @@
       "location": "Rimouski",
       "date": "16 Aug",
       "description": "We stopped by Rimouski on route to Amqui. Couldn't pass up the chance to take a photo of the lighthouse",
-      "image": "https://iili.io/d8R8hX.jpg"
+      "image": "rimouski_lighthouse.jpg",
+      "disabled": true
     },
     {
       "id": 9,
@@ -47,7 +56,7 @@
       "location": "Parc National Du Bic",
       "date": "15 Aug",
       "description": "Our first hike for the trip",
-      "image": "https://iili.io/d8RGhF.jpg"
+      "image": "parc_bic.jpg"
     },
     {
       "id": 8,
@@ -55,7 +64,7 @@
       "location": "Notre-Dame-des-Neiges",
       "date": "14-15 Aug",
       "description": "",
-      "image": "https://iili.io/d8Rhrv.jpg"
+      "image": "feet_van.jpg"
     },
     {
       "id": 7,
@@ -63,7 +72,7 @@
       "location": "Montmagny",
       "date": "12 Aug",
       "description": "",
-      "image": "https://iili.io/d8RadQ.jpg"
+      "image": "stargazing.jpg"
     },
     {
       "id": 6,
@@ -71,7 +80,7 @@
       "location": "Stoneham-et-Tewkesbury",
       "date": "8-9 Aug",
       "description": "After a rocky first week we decided to treat ourselves. A dedicated camping spot instead of our truck stop or roadside parking. The luxury of hot showers, fire and perfectly spaced trees for a hammock made this stop a highlight.",
-      "image": "https://iili.io/d8RMLg.jpg"
+      "image": "campfire.jpg"
     },
 
     {
@@ -80,7 +89,7 @@
       "location": "Quebec City",
       "date": "7-11 Aug",
       "description": "Big cities and big vans don't really get along as we unfortunately discovered. Trying to force ourselves into a carpark that is 30cm lower than our van, getting stuck and struggling to get back out was not the best first impression of the Quebec city. The charm of the city did come though and for a moment you could think you were in France.",
-      "image": "https://iili.io/d8Rtj9.jpg"
+      "image": "quebec.jpg"
     },
     {
       "id": 4,
@@ -88,7 +97,7 @@
       "location": "Lac Durand",
       "date": "6-7 Aug",
       "description": "The kindness of strangers is always a welcome surpise. After setting up our camp and opening a bottle of wine we were confronted by one of the home owners we parked in front of. We were initially worried we were going to be told off. Instead the man offered us the chance to go in a canoe ride on the lake, which of course we immediately accepted. We even left our wine...",
-      "image": "https://iili.io/d8RWBa.jpg"
+      "image": "canoe.jpg"
     },
     {
       "id": 3,
@@ -96,7 +105,7 @@
       "location": "Magog",
       "date": "4-5 Aug",
       "description": "Four days into our journey and things are starting to get a little... smelly. No showers outfitted in our van, we decided to visit Magog's beautiful beachside where we discovered a set of showers.",
-      "image": "https://iili.io/d8REI1.jpg"
+      "image": "magog.jpg"
     },
     {
       "id": 2,
@@ -104,7 +113,7 @@
       "location": "North Hatley",
       "date": "2-4 Aug",
       "description": "North Hatley is a quient little town, but don't let it's size trick you. The village owes most of its great houses and particular architecture to its first aristocrats, and mostly Americans from south of the Mason–Dixon line. After having great WiFi at the local library and walking along the seaside we decided to make our dinner. Little did we know that the van's batteries were not strong enough to power our tiny litle hotplate. We tried everything in desperation, including trying to fix our solar panel. Eventually we scavenged and found a small power plug outside the tourist information center. We gathered around our pan in the cold outdoors like two hobbits. The state of confusion of tourists as they tried to enter the building and was met with two master chefs was a surprise for sure.",
-      "image": "https://iili.io/d8RXEJ.jpg"
+      "image": "north_hatley.jpg"
     },
     {
       "id": 1,
@@ -112,7 +121,7 @@
       "location": "Coaticook",
       "date": "1 Aug",
       "description": "",
-      "image": "https://iili.io/d8R0mP.jpg"
+      "image": "forest_illumina.jpg"
     }
   ]
 }
