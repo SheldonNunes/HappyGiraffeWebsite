@@ -1,9 +1,33 @@
 {
   "locations": [
     {
+      "id": 18,
+      "title": "Searching for Moose",
+      "location": "Gaspesie Park",
+      "date": "12-13 Sep",
+      "description": "",
+      "image": "gaspesie_park.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Charades on the Rocks",
+      "location": "Cap Chat",
+      "date": "9 Sep",
+      "description": "",
+      "image": "cap_chat.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Final view of Gaspesie",
+      "location": "Forillon Park",
+      "date": "6 Sep",
+      "description": "",
+      "image": "forillon_park.jpg"
+    },
+    {
       "id": 15,
-      "title": "Pérce",
-      "location": "Pérce",
+      "title": "\"It's just a rock\"",
+      "location": "Percé",
       "date": "1-4 Sep",
       "description": "",
       "image": "perce_pose.jpg"

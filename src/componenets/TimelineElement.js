@@ -25,6 +25,9 @@ export default function TimelineElement(props) {
       <h3 className="vertical-timeline-element-title">
         {timeline_location.title}
       </h3>
+      <p>
+        <i>{timeline_location.location}</i>
+      </p>
       <p>{timeline_location.description}</p>
     </VerticalTimelineElement>
   );

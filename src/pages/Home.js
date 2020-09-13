@@ -20,10 +20,16 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 243649 - 238904;
-const currentLocation = [-66.16613, 49.20537];
+const distanceTravelled = 243949 - 238904;
+const currentLocation = [-68.1426, 49.23894];
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
+);
+
+const totalDays = Math.round(
+  (Date.parse("27 Sep 2020 00:00:00 EST") -
+    Date.parse("01 Aug 2020 00:00:00 EST")) /
+    (1000 * 60 * 60 * 24)
 );
 
 export default function Home(props) {
@@ -60,7 +66,7 @@ export default function Home(props) {
               width: "100%",
               cursor: "default",
             }}
-            center={[-66.16613, 47.50537]}
+            center={[-67.16613, 47.50537]}
             zoom={[6]}
           >
             <Marker coordinates={currentLocation} anchor="center">
@@ -115,15 +121,15 @@ export default function Home(props) {
           <h4>Total Nights</h4>
           <div className="statistic-graph">
             <CircularProgressbar
-              value={(currentDays / 60) * 100}
-              text={`${currentDays}/${60}`}
+              value={(currentDays / totalDays) * 100}
+              text={`${currentDays}/${totalDays}`}
             />
           </div>
         </div>
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
           <div className="stat-container">
-            <p className="stat">22</p>
+            <p className="stat">27</p>
           </div>
         </div>
       </div>
@@ -136,12 +142,12 @@ export default function Home(props) {
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha Two - FX-Quartz</p>
-          <p>28/36 Photos</p>
+          <p>34/36 Photos</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={sony_a7} />
           <p>Sony A7</p>
-          <p>730 Photos</p>
+          <p>932 Photos</p>
         </div>
       </div>
       <h2>Timeline</h2>
