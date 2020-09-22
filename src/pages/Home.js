@@ -20,8 +20,8 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 243949 - 238904;
-const currentLocation = [-69.411014, 48.344628];
+const distanceTravelled = 245250 - 238904;
+const currentLocation = [-71.612, 48.57];
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
 );
@@ -129,7 +129,7 @@ export default function Home(props) {
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
           <div className="stat-container">
-            <p className="stat">27</p>
+            <p className="stat">30</p>
           </div>
         </div>
       </div>
@@ -137,17 +137,17 @@ export default function Home(props) {
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha One - FX-Quartz</p>
-          <p>36/36 (Needs Developing)</p>
+          <p>36/36</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha Two - FX-Quartz</p>
-          <p>34/36 Photos</p>
+          <p>36/36 (Needs Developing)</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={sony_a7} />
           <p>Sony A7</p>
-          <p>932 Photos</p>
+          <p>985 Photos</p>
         </div>
       </div>
       <h2>Timeline</h2>

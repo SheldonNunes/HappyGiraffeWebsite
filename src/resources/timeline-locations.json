@@ -1,6 +1,14 @@
 {
   "locations": [
     {
+      "id": 19,
+      "title": "Kayaking with Whales",
+      "location": "Tadoussac",
+      "date": "19-20 Sep",
+      "description": "",
+      "image": "whale_kayaking.jpg"
+    },
+    {
       "id": 18,
       "title": "Searching for Moose",
       "location": "Gaspesie Park",
