@@ -149,12 +149,12 @@ export default function Home(props) {
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha One - FX-Quartz</p>
-          <p>36/36 (Needs Developing)</p>
+          <p>36/36</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha Two - FX-Quartz</p>
-          <p>36/36 (Needs Developing)</p>
+          <p>36/36</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={sony_a7} />
