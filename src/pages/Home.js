@@ -11,6 +11,18 @@ import "react-circular-progressbar/dist/styles.css";
 import "./../ProgressBar.css";
 import ReactMapboxGl, { Marker, GeoJSONLayer } from "react-mapbox-gl";
 
+import placeholder from "./../images/placeholder_animal.svg";
+
+import buffalo from "./../images/animals/buffalo.png";
+import deer from "./../images/animals/deer.png";
+import fox from "./../images/animals/fox.png";
+import gannett from "./../images/animals/gannett.png";
+import moose from "./../images/animals/moose.svg";
+import seal from "./../images/animals/seal.png";
+import squirrel from "./../images/animals/squirrel.png";
+import whale from "./../images/animals/whale.png";
+import wolf from "./../images/animals/wolf.png";
+
 import travelled from "./../resources/travelled.geojson";
 import locations from "./../resources/locations.geojson";
 
@@ -137,7 +149,7 @@ export default function Home(props) {
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
           <p>Alpha One - FX-Quartz</p>
-          <p>36/36</p>
+          <p>36/36 (Needs Developing)</p>
         </div>
         <div className="full-width">
           <img className="we-are-here" src={film_roll} />
@@ -148,6 +160,53 @@ export default function Home(props) {
           <img className="we-are-here" src={sony_a7} />
           <p>Sony A7</p>
           <p>985 Photos</p>
+        </div>
+      </div>
+      <div className="animal-sidebar">
+        <div className="full-width animal">
+          <img className="animal_icon" src={whale} />
+          <p>Whale</p>
+          <p>5</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={deer} />
+          <p>Caribou</p>
+          <p>4</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={moose} />
+          <p>Moose</p>
+          <p>2</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={buffalo} />
+          <p>Bison</p>
+          <p>4</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={seal} />
+          <p>Seals</p>
+          <p>17</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={wolf} />
+          <p>Wolf</p>
+          <p>4</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={gannett} />
+          <p>Gannets</p>
+          <p>999</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={fox} />
+          <p>Fox</p>
+          <p>4</p>
+        </div>
+        <div className="full-width animal">
+          <img className="animal_icon" src={squirrel} />
+          <p>Squirrels</p>
+          <p>83</p>
         </div>
       </div>
       <h2>Timeline</h2>

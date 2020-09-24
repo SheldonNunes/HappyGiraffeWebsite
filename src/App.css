@@ -193,6 +193,22 @@ p {
   padding-bottom: 50px;
 }
 
+.animal-sidebar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 0px 0px;
+  flex-wrap: wrap;
+  min-width: 200px;
+  padding: 0px 80px;
+  padding-bottom: 50px;
+}
+
+.animal {
+  width: 10% !important;
+}
+
 .map-sidebar img {
   filter: grayscale(60%);
   color: #333;
@@ -279,10 +295,30 @@ p {
   }
 
   .map-sidebar {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .animal-sidebar {
+    padding: 0px 0px;
+    flex-wrap: wrap;
+  }
+
+  .animal {
+    width: 40% !important;
   }
 }
 
 .toberemoved {
   display: grid;
+}
+
+.animal_icon {
+  width: 40%;
+  filter: brightness(0.9) invert(0.7) sepia(0.4) hue-rotate(31deg)
+    saturate(200%) !important;
+}
+
+.animal p:first-of-type {
+  font-size: 10px;
+  font-style: italic;
 }
