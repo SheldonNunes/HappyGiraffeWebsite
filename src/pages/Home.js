@@ -32,7 +32,7 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 245250 - 238904;
+const distanceTravelled = 245350 - 238904;
 const currentLocation = [-70.507895, 47.440304];
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
@@ -141,7 +141,7 @@ export default function Home(props) {
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
           <div className="stat-container">
-            <p className="stat">30</p>
+            <p className="stat">32</p>
           </div>
         </div>
       </div>
@@ -165,12 +165,12 @@ export default function Home(props) {
       <div className="animal-sidebar">
         <div className="full-width animal">
           <img className="animal_icon" src={whale} />
-          <p>Whale</p>
+          <p>Whales</p>
           <p>5</p>
         </div>
         <div className="full-width animal">
           <img className="animal_icon" src={deer} />
-          <p>Caribou</p>
+          <p>Caribous</p>
           <p>4</p>
         </div>
         <div className="full-width animal">
@@ -190,7 +190,7 @@ export default function Home(props) {
         </div>
         <div className="full-width animal">
           <img className="animal_icon" src={wolf} />
-          <p>Wolf</p>
+          <p>Wolves</p>
           <p>4</p>
         </div>
         <div className="full-width animal">
@@ -200,7 +200,7 @@ export default function Home(props) {
         </div>
         <div className="full-width animal">
           <img className="animal_icon" src={fox} />
-          <p>Fox</p>
+          <p>Foxes</p>
           <p>4</p>
         </div>
         <div className="full-width animal">
