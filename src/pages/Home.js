@@ -33,7 +33,7 @@ const Map = ReactMapboxGl({
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
 const distanceTravelled = 245250 - 238904;
-const currentLocation = [-71.612, 48.57];
+const currentLocation = [-70.507895, 47.440304];
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
 );

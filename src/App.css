@@ -169,6 +169,7 @@ p {
 
 .we-are-here {
   width: 60px;
+  transform: scaleX(-1);
 }
 
 .map-section {
