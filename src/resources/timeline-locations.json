@@ -1,12 +1,20 @@
 {
   "locations": [
     {
-      "id": 19,
+      "id": 20,
       "title": "Kayaking with Whales",
       "location": "Tadoussac",
       "date": "19-20 Sep",
       "description": "",
       "image": "whale_kayaking.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Statue in the Woods",
+      "location": "Parc National Fjord-du-Saguenay",
+      "date": "19-20 Sep",
+      "description": "We discovered this statue after a 3.8 km hike through arduous terrain. The golden guilded statue was commissioned by salesman Charles Robitaille who after falling through the ice of the Saquenay in 1878, implored the Virgin Mary to save him and when saved decided to create a statue in her honour. The remarkable thing is this statue is 35 feet high, weighs 3 tons, assembled in 14 pieces and is perched thousands of feet above the Saguenay in a small rocky clearing.",
+      "image": "statue.jpg"
     },
     {
       "id": 18,
