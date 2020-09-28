@@ -32,8 +32,8 @@ const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1Ijoic2hlbGRvbm51bmVzIiwiYSI6ImNrZHhqd3k1bDEyZXkycm9nOWdjM3hvNHAifQ.U1ml7ludEhsFESNWh062Qg",
 });
-const distanceTravelled = 245350 - 238904;
-const currentLocation = [-70.507895, 47.440304];
+const distanceTravelled = 246110 - 238904;
+const currentLocation = [-73.572649, 45.515425];
 const currentDays = Math.round(
   (Date.now() - Date.parse("01 Aug 2020 00:00:00 EST")) / (1000 * 60 * 60 * 24)
 );
@@ -63,7 +63,7 @@ export default function Home(props) {
         </div>
         <img src={banner} className="banner" />
         <div className="banner-footer">
-          <h3>See where we are now</h3>
+          <h3>See the journey</h3>
           <p onClick={handleClick} className="arrow">
             ▽
           </p>
@@ -79,7 +79,7 @@ export default function Home(props) {
               cursor: "default",
             }}
             center={[-67.16613, 47.50537]}
-            zoom={[6]}
+            zoom={[5]}
           >
             <Marker coordinates={currentLocation} anchor="center">
               <img className="we-are-here" src={here} />
@@ -132,16 +132,13 @@ export default function Home(props) {
         <div className="full-width">
           <h4>Total Nights</h4>
           <div className="statistic-graph">
-            <CircularProgressbar
-              value={(currentDays / totalDays) * 100}
-              text={`${currentDays}/${totalDays}`}
-            />
+            <CircularProgressbar value={100} text={`57/57`} />
           </div>
         </div>
         <div className="full-width">
           <h4>Total Tim Horton's visited</h4>
           <div className="stat-container">
-            <p className="stat">32</p>
+            <p className="stat">34</p>
           </div>
         </div>
       </div>

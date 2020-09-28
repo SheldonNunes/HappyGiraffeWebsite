@@ -1,6 +1,14 @@
 {
   "locations": [
     {
+      "id": 21,
+      "title": "Final Wildlife Experience",
+      "location": "Parc Omega",
+      "date": "26 Sep",
+      "description": "",
+      "image": "deer.jpg"
+    },
+    {
       "id": 20,
       "title": "Kayaking with Whales",
       "location": "Tadoussac",
