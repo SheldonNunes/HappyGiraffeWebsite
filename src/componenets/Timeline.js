@@ -13,6 +13,10 @@ export default function Timeline(props) {
 
   return (
     <VerticalTimeline>
+      <div className="stormstroopers">
+        <img style={{  width: "500px",
+  height: "400px"}} src="https://thumbs.dreamstime.com/z/flat-icon-calendar-th-august-isolated-gray-background-vector-illustration-calendar-th-august-135284454.jpg"/>
+      </div>
       {timeline_locations.locations
         .filter((timeline_location) => !timeline_location.disabled)
         .map((timeline_location) => {
