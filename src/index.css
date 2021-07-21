@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
 
@@ -22,7 +22,6 @@ body {
 
 .posts {
   border-top: 5px black solid;
-  
 }
 
 .post {
@@ -48,7 +47,7 @@ body {
 }
 
 .post__title a {
-  color:black;
+  color: black;
   border-bottom: 1px dotted black;
   text-decoration: none;
 }
@@ -94,3 +93,6 @@ body {
   }
 }
 
+.stormstroopers {
+  display: none;
+}
