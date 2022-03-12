@@ -2,173 +2,35 @@
   "locations": [
     {
       "id": 21,
-      "title": "Final Wildlife Experience",
-      "location": "Parc Omega",
-      "date": "26 Sep",
-      "description": "",
-      "image": "deer.jpg"
+      "title": "NZ Van trip",
+      "location": "Coromandel",
+      "date": "25 Feb 2022",
+      "description": "Travelled and lived in van for a week",
+      "image": "van_trip.jpg"
     },
     {
       "id": 20,
-      "title": "Kayaking with Whales",
-      "location": "Tadoussac",
-      "date": "19-20 Sep",
-      "description": "",
-      "image": "whale_kayaking.jpg"
+      "title": "Family trip (NZ family)",
+      "location": "Waihi",
+      "date": "22 Jan 2022",
+      "description": "Family trip with Nunes family in Waihi",
+      "image": "family_trip.JPG"
     },
     {
       "id": 18,
-      "title": "Statue in the Woods",
-      "location": "Parc National Fjord-du-Saguenay",
-      "date": "19-20 Sep",
-      "description": "We discovered this statue after a 3.8 km hike through arduous terrain. The golden guilded statue was commissioned by salesman Charles Robitaille who after falling through the ice of the Saquenay in 1878, implored the Virgin Mary to save him and when saved decided to create a statue in her honour. The remarkable thing is this statue is 35 feet high, weighs 3 tons, assembled in 14 pieces and is perched thousands of feet above the Saguenay in a small rocky clearing.",
-      "image": "statue.jpg"
+      "title": "First NZ vacation",
+      "location": "Taupo",
+      "date": "2 Aug 2021",
+      "description": "Travelled and explored Taupo.",
+      "image": "taupo.jpeg"
     },
     {
       "id": 18,
-      "title": "Searching for Moose",
-      "location": "Gaspesie Park",
-      "date": "12-13 Sep",
-      "description": "",
-      "image": "gaspesie_park.jpg"
-    },
-    {
-      "id": 17,
-      "title": "Charades on the Rocks",
-      "location": "Cap Chat",
-      "date": "9 Sep",
-      "description": "",
-      "image": "cap_chat.jpg"
-    },
-    {
-      "id": 16,
-      "title": "Final view of Gaspesie",
-      "location": "Forillon Park",
-      "date": "6 Sep",
-      "description": "",
-      "image": "forillon_park.jpg"
-    },
-    {
-      "id": 15,
-      "title": "\"It's just a rock\"",
-      "location": "Percé",
-      "date": "1-4 Sep",
-      "description": "",
-      "image": "perce_pose.jpg"
-    },
-    {
-      "id": 14,
-      "title": "Island time",
-      "location": "Iles de la Madeleine",
-      "date": "22-29 Aug",
-      "description": "",
-      "image": "magdolen_islands.jpg"
-    },
-    {
-      "id": 13,
-      "title": "Bottoms up!",
-      "location": "Lac Noir, Bonaventure",
-      "date": "20-21 Aug",
-      "description": "",
-      "image": "van-gif.gif",
-      "disabled": true
-    },
-    {
-      "id": 12,
-      "title": "Love letters in the rain",
-      "location": "Carleton-sur-Mer",
-      "date": "18 Aug",
-      "description": "",
-      "image": "carleton.jpg"
-    },
-    {
-      "id": 11,
-      "title": "Living our best life",
-      "location": "Amqui",
-      "date": "16-17 Aug",
-      "description": "",
-      "image": "amqui.jpg"
-    },
-    {
-      "id": 10,
-      "title": "Lighthouse & Submarines",
-      "location": "Rimouski",
-      "date": "16 Aug",
-      "description": "We stopped by Rimouski on route to Amqui. Couldn't pass up the chance to take a photo of the lighthouse",
-      "image": "lighthouse.jpg"
-    },
-    {
-      "id": 9,
-      "title": "Walking blind",
-      "location": "Parc National Du Bic",
-      "date": "15 Aug",
-      "description": "Our first hike for the trip",
-      "image": "parc_bic.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Sunset chaser",
-      "location": "Notre-Dame-des-Neiges",
-      "date": "14-15 Aug",
-      "description": "",
-      "image": "feet_van.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Stargazing at the Paregius",
-      "location": "Montmagny",
-      "date": "12 Aug",
-      "description": "",
-      "image": "stargazing.jpg"
-    },
-    {
-      "id": 6,
-      "title": "First campfire",
-      "location": "Stoneham-et-Tewkesbury",
-      "date": "8-9 Aug",
-      "description": "After a rocky first week we decided to treat ourselves. A dedicated camping spot instead of our truck stop or roadside parking. The luxury of hot showers, fire and perfectly spaced trees for a hammock made this stop a highlight.",
-      "image": "campfire.jpg"
-    },
-
-    {
-      "id": 5,
-      "title": "It's not going to fit",
-      "location": "Quebec City",
-      "date": "7-11 Aug",
-      "description": "Big cities and big vans don't really get along as we unfortunately discovered. Trying to force ourselves into a carpark that is 30cm lower than our van, getting stuck and struggling to get back out was not the best first impression of the Quebec city. The charm of the city did come though and for a moment you could think you were in France.",
-      "image": "quebec.jpg"
-    },
-    {
-      "id": 4,
-      "title": "The water lilly song",
-      "location": "Lac Durand",
-      "date": "6-7 Aug",
-      "description": "The kindness of strangers is always a welcome surpise. After setting up our camp and opening a bottle of wine we were confronted by one of the home owners we parked in front of. We were initially worried we were going to be told off. Instead the man offered us the chance to go in a canoe ride on the lake, which of course we immediately accepted. We even left our wine...",
-      "image": "canoe.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Oh Magod",
-      "location": "Magog",
-      "date": "4-5 Aug",
-      "description": "Four days into our journey and things are starting to get a little... smelly. No showers outfitted in our van, we decided to visit Magog's beautiful beachside where we discovered a set of showers.",
-      "image": "magog.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Roadside cooking",
-      "location": "North Hatley",
-      "date": "2-4 Aug",
-      "description": "North Hatley is a quient little town, but don't let it's size trick you. The village owes most of its great houses and particular architecture to its first aristocrats, and mostly Americans from south of the Mason–Dixon line. After having great WiFi at the local library and walking along the seaside we decided to make our dinner. Little did we know that the van's batteries were not strong enough to power our tiny litle hotplate. We tried everything in desperation, including trying to fix our solar panel. Eventually we scavenged and found a small power plug outside the tourist information center. We gathered around our pan in the cold outdoors like two hobbits. The state of confusion of tourists as they tried to enter the building and was met with two master chefs was a surprise for sure.",
-      "image": "north_hatley.jpg"
-    },
-    {
-      "id": 1,
-      "title": "A bright start",
-      "location": "Coaticook",
-      "date": "1 Aug",
-      "description": "",
-      "image": "forest_illumina.jpg"
+      "title": "MIQ NZ",
+      "location": "Novotel, AUK",
+      "date": "13 May 2019",
+      "description": "Arrival into New Zealand, 14 day quarantine",
+      "image": "miq.jpg"
     }
   ]
 }
